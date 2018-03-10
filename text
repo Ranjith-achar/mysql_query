@@ -1,0 +1,36 @@
+
++ Options
+ Full texts
+employeeNumber
+lastName
+firstName
+extension
+email
+officeCode
+reportsTo
+jobTitle
+
+
+
+$db=mysqli_connect("localhost","root","root123","classicmodels");
+
+$query="SELECT lastname, firstname, jobtitle
+
+FROM
+employees
+
+WHERE
+
+jobtitle = 'Sales Rep';
+
+";
+
+
+$result=mysqli_query($db,$query);
+
+while($row=mysqli_fetch_array($result)){
+
+      echo "<pre>";
+      echo print_r($row);
+      echo "</pre>";
+}
