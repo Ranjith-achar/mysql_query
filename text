@@ -34,3 +34,16 @@ while($row=mysqli_fetch_array($result)){
       echo print_r($row);
       echo "</pre>";
 }
+
+
+
+
+
+
+
+
+
+SELECT firstnametable.fi   ---------- FROM table_one inner_join table_two
+
+
+ON tableone.primarykey(col value)=table2.secondarykey();

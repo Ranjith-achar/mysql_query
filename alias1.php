@@ -2,21 +2,6 @@
 
 include 'connectdb.php';
 
-
-/*
-
-concate -> is a function which concates two coloms and retuns
-SELECT
-    concat(contactFirstName,' ',contactLastName) Fullname
-FROM
-    customers;
-
-    $query="SELECT concat(lastname,' ',firstnam) Fullname FROM employees";
-
-    $result=mysqli_query($db,$query);
-    echo var_dump($result);
-
-*/
 $query="SELECT
     concat(lastname,' ',firstname) as fullNames
 FROM
@@ -33,17 +18,11 @@ while($row=mysqli_fetch_array($result)){
       echo "</pre>";
 }
 
-
 /*
 if we want space between two names then we should
 
-  concat(lastname,' ',firstname) as fullNames
+  concat(lastname,' ',firstname) as fullNames -> where fullnames is a colom name reference to display in table
 
 */
-
-
-
-
-
 
 ?>

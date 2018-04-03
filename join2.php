@@ -1,18 +1,20 @@
 <?php
 
 
+/*
+there is no much differene between this and previous one
+because boath are same but only difference is here we are giving alias as
+reference for coom names to disply in table
+*/
+
+
 
 /*
-
 inner_join we can use just join
 means we can ommit inner keyword
 boath are same
 
 */
-
-
-
-
 include 'connectdb.php';
 
 

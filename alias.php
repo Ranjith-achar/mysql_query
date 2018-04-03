@@ -23,22 +23,15 @@ FROM
     customers";
   $result=mysqli_query($db,$query);
 
-
-
-
 while($row=mysqli_fetch_array($result)){
 
       echo "<pre>";
       echo print_r($row);
       echo "</pre>";
 }
-
-
-
-
-
-
-
-
-
+/*difference between var_dump -> which is displays structured information about
+variables
+and
+print_r - this function which display the array in human readble formate
+*/
 ?>

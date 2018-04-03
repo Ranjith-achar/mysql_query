@@ -16,7 +16,7 @@ $result=mysqli_query($db,$query);
 
 <body>
 
-<table border="1">
+<table border="1">     <!--table tag outside the loop and tr is a static content-->
 
 <tr>
 <th>employeeNumber</th>
@@ -29,9 +29,9 @@ $result=mysqli_query($db,$query);
 <th>jobTitle</th>
 </tr>
 
-<?php while($row=mysqli_fetch_array($result)){?>
-<tr>
-<td><?php echo $row['employeeNumber']?></td>
+<?php while($row=mysqli_fetch_array($result)){?> <!--we can use mysqli_fecth_object(insted of mysqli fecth arrasy)-->
+<tr>                                             <!--but the diffrence is $echo $row->name-->
+<td><?php echo $row['employeeNumber']?></td>      <!--we can fetch and returns result set as object insted of array format-->
 <td><?php echo $row['lastName']?></td>
 <td><?php echo $row['firstName']?></td>
 <td><?php echo $row['extension']?></td>

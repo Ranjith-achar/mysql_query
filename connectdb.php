@@ -1,10 +1,8 @@
 <?php
-$db=mysqli_connect("localhost","root","root123","classicmodels");
+$db=mysqli_connect("localhost","root","","classicmodels");
 
 /*if($db){
-
-  echo "connected";
+echo "connected";
 }*/
-
 
 ?>

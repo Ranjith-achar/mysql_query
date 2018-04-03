@@ -12,6 +12,11 @@ use of ORDER BY clause
 
 which arranges a feild in an assending order
 
+or
+
+
+DESC order
+
 */
 $db=mysqli_connect("localhost","root","root123","classicmodels");
 
